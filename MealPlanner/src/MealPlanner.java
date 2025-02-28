@@ -41,7 +41,7 @@ public class MealPlanner {
 
         initialize();
     }
-
+//connection to database
     private void connectToDatabase() {
         try {
             String url = "jdbc:mysql://localhost:3306/meal_planner";
@@ -238,7 +238,7 @@ public class MealPlanner {
         frame.validate();
         frame.repaint();
     }
-
+// recipepanel
     private void showAddRecipePanel() {
         addRecipePanel = new JPanel();
         addRecipePanel.setLayout(new GridLayout(4, 2));
@@ -280,7 +280,7 @@ public class MealPlanner {
         frame.validate();
         frame.repaint();
     }
-
+// list of recipe
     private void showListRecipesPanel() {
         listRecipesPanel = new JPanel();
         listRecipesPanel.setLayout(new BorderLayout());
